@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "security extension",
+    "description": "Encrypts email on sender, decrypts on reciever",
+    "version": "0.0.1",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "encrypt.js",
+            "background.js"
+        ]
+    }
+}
